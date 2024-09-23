@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income & Expenses</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="bg-white shadow-lg mx-auto p-4 rounded-xl max-w-lg container">
+        <h1 class="mb-6 font-bold text-4xl text-blue-900 text-center">Income & Expenses Tracker</h1>
+
+        <!-- Income Section -->
+        <div class="bg-gray-100 shadow-md mb-6 p-6 rounded-lg">
+            <h2 class="mb-4 font-semibold text-2xl text-blue-700">Income</h2>
+            <div id="income-list">
+                <!-- Income inputs will go here -->
+            </div>
+            <button id="add-income" class="bg-green-500 hover:bg-green-600 mt-4 px-4 py-2 rounded-lg w-full text-white transition duration-300 ease-in-out">
+                + Add Income
+            </button>
+        </div>
+
+        <!-- Expense Section -->
+        <div class="bg-gray-100 shadow-md mb-6 p-6 rounded-lg">
+            <h2 class="mb-4 font-semibold text-2xl text-red-700">Expenses</h2>
+            <div id="expense-list">
+                <!-- Expense inputs will go here -->
+            </div>
+            <button id="add-expense" class="bg-red-500 hover:bg-red-600 mt-4 px-4 py-2 rounded-lg w-full text-white transition duration-300 ease-in-out">
+                + Add Expense
+            </button>
+        </div>
+
+        <!-- Calculate Button -->
+        <button id="calculate-btn" class="bg-blue-500 hover:bg-blue-600 px-4 py-3 rounded-lg w-full text-white text-xl transition duration-300 ease-in-out">
+            Calculate Balance
+        </button>
+
+        <!-- Result Section -->
+        <div id="result" class="bg-pink-500 mt-6 rounded-lg font-semibold text-2xl text-center text-white">
+            <p>Your remaining balance will be displayed here.</p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
